@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #369;
+}
+
+button {
+  outline: none;
+}
+
+.user-list {
+  float: left;
+  width: 600px;
+}
+
+.sidebar {
+  padding: 12px;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  background: #efefef;
+  top: 12;
+  width: 240px;
+}
+
+.btn-card {
+  cursor: pointer;
+  border: 0;
+  width: 80px;
+  background-color: #369;
+  color: #fff;
+  padding: 8px;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.user-card {
+  width: 240px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  display: inline-block;
+  margin: 12px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.user-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background: #efefef;
+}
+
+.user-card h4 {
+  margin: 0;
+}
+
+.btn-edit {
+  font-size: 32px;
+  cursor: pointer;
+  padding: 12px;
+  color: #999;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.btn-edit:hover {
+  color: #000;
+}
+.btn-edit:after {
+  content: "\270E";
+}
+
+.btn-close {
+  border: 0;
+  background: 0;
+  font-size: 38px;
+  color: #ccc;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 20;
+}
+
+.user-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  color: #999;
+  text-align: left;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 12px;
+}
+
+.form-group input {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px;
+  font-size: 24px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  font-size: 24px;
+  border: 0;
+  color: #fff;
+  background-color: #76c866;
+}
+
+.users-link {
+  padding: 20px;
+  display: block;
+  font-size: 36px;
+}
