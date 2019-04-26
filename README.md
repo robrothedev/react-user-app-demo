@@ -11,4 +11,4 @@ Demo web application writting in React to fetch a list of users from a mock api 
 
 Built using [create-react-app](https://github.com/facebook/create-react-app)
 
-[View Demo](https://codesandbox.io/embed/04vm6o351w)
+[View Demo](https://codesandbox.io/s/kx41kykwy7)
