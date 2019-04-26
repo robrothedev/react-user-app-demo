@@ -6,8 +6,7 @@
 import React, { useState, useContext } from "react";
 import { UsersContext } from "../state/UsersListProvider";
 import UserList from "./UserList";
-import UserCard from "./UserCard";
-import UserLink from "./UserLink";
+import QuickView from "./QuickView";
 
 const RenderUsers = () => {
   let state = useContext(UsersContext);
@@ -22,15 +21,7 @@ const RenderUsers = () => {
         <UserList {...state} quickView={setUser} />
       </div>
       <div className="sidebar">
-        {user && (
-          <div>
-            <button onClick={closeUser} className="btn-close">
-              &times;
-            </button>
-            <UserCard user={user} />
-            <UserLink id={user.id}>Edit</UserLink>
-          </div>
-        )}
+        <QuickView user={user} handleClose={closeUser} />
       </div>
     </div>
   );
